@@ -5,7 +5,6 @@ import akki from "../assets/image.png";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons'; 
-import { faAddressCard } from '@fortawesome/free-solid-svg-icons/faAddressCard';
 
 const Home = () => {
     return (
@@ -22,7 +21,7 @@ const Home = () => {
                 </div>
                 <div className={styles.buttonContainer}>
                     <a href="#about" className={styles.button}>
-                        About me <FontAwesomeIcon icon={faAddressCard} style={{color: "#ffffff",}} className={styles.faIcon} />
+                        About me
                     </a>
                     <a href="/resume.pdf" download className={styles.btn}>
                             Download Resume <FontAwesomeIcon icon={faDownload} style={{ color: '#7562e0' }} />
