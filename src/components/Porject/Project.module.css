@@ -1,0 +1,142 @@
+.main {
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.heading {
+    font-size: 3rem;
+    color: #7562E0;
+    margin-bottom: 40px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    background: #31313F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 240px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.image {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.name {
+    font-size: 1rem;
+    color: #7562E0;
+    margin: 10px 0 5px 0;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.description {
+    font-size: 0.80rem;
+    color: #ffffff;
+    padding: 0 20px 10px 20px;
+    height: 100px;
+    text-align: left;
+}
+
+.link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.btns {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #7562E0;
+    color: white;
+    font-size: 0.80rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid #7562E0;
+    padding: 10px 10px;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.80rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .name {
+        font-size: 0.9rem;
+    }
+
+    .description {
+        font-size: 0.75rem;
+        height: auto; /* Allow description to grow */
+    }
+
+    .btns, .btn {
+        padding: 8px 12px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        height: auto; /* Allow description to grow */
+    }
+
+    .btns, .btn {
+        padding: 10px 15px;
+        font-size: 0.90rem;
+    }
+}

@@ -1,0 +1,138 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+}
+
+.containerOne, .containerTwo {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.containerOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.containerTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subHead {
+    font-size: 24px;
+    color:#7562E0;
+    margin-bottom: 10px;
+}
+
+.formHead {
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.socialMedia {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.socialMedia a {
+    color: #7562E0;  /* Icon color */
+    font-size: 24px; /* Adjust icon size */
+    text-decoration: none;
+    margin-right: 10px; /* Space between icons */
+}
+
+.socialMedia a:hover {
+    color: #ffffff; /* Change color on hover */
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: "Poppins", sans-serif;
+    color: #cecece; /* Placeholder color */
+    opacity: 1; /* Ensure the placeholder color is visible */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: #cecece;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #cecece;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    border: none;
+    background: #31313F;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #7562E0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact {
+    width: 480px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .containerOne, .containerTwo {
+        margin: 0;
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 468px) {
+    .containerOne, .containerTwo {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .socialMedia {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .socialMedia a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

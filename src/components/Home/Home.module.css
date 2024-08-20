@@ -1,0 +1,178 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 20px; */
+    width: 100%;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+.intro {
+   margin-left: 10%;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+.textSection {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    align-content: center;
+    /* border: 2px solid red; */
+}
+
+.greeting {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    color: #fffdfd;
+
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    line-height: normal;
+    color: #fffdfd;
+
+}
+
+.description {
+    font-size: 1rem;
+    color: #f7f4f4;
+    width: 70%;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color:  #7562E0;;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+.btn{
+    background-color: transparent;
+    border: 2px solid #7562E0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.faIcon:hover{
+background-color: #7562E0;
+}
+.button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: #7562E0;
+}
+
+.imageSection {
+    position: relative;
+    top: 0;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* border: 2px solid rgb(17, 0, 255); */
+    height: 500px;
+}
+
+.imageContainer {
+    width: 350px; /* Adjust as needed */
+    height: 350px; /* Adjust as needed */
+    border-radius: 50%;
+    background-color:  #7562E0;;
+    position: absolute;
+    top: 130px;
+    overflow: hidden;
+    /* margin-top: 60px; */
+}
+
+.image {
+    position: absolute;
+    top: 0px;
+    width: 500px;
+    height: 400px;
+    margin-top: 0px;
+}
+.hidebar{
+    position: absolute;
+    top: 75%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    height: 90px;
+    background-color: #181824;
+}
+@media (max-width: 468px) {
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    /* border: 2px solid rgb(9, 255, 0); */
+    /* margin-top: 0;
+    padding: 0;
+    margin-bottom: 10%; */
+}
+.button ,.btn{
+    font-size: 0.80rem;
+    padding: 10px 10px;
+}
+.intro{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 10px;
+
+}
+.greeting{
+    font-size: 1rem;
+}
+.name{
+    font-size: 1.5rem;
+}
+.description{
+    width: 80%;
+    font-size: 0.80rem;
+}
+.imageSection{
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.imageContainer{
+    width: 300px;
+    height: 300px;
+    /* margin-top: 0px; */
+}
+.image{
+    width: 100%;
+    max-width: 500px;
+    height: 340px;
+}
+.hidebar{
+    position: absolute;
+    top: 40%;
+    height: 100px;
+    width: 80%;
+    margin: auto 10%;
+}
+}
