@@ -30,6 +30,11 @@ const Navbar = () => {
             </a>
           </li>
           <li className={styles.navbarMenuItem}>
+            <a href="#education" className={styles.navbarMenuLink}>
+              Education
+            </a>
+          </li>
+          <li className={styles.navbarMenuItem}>
             <a href="#skill" className={styles.navbarMenuLink}>
               Skill
             </a>
