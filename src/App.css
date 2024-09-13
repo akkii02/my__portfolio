@@ -8,3 +8,8 @@ html {
     scroll-behavior: smooth;
   }
   
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #7562E0;
+    scroll-behavior: smooth;
+  }
