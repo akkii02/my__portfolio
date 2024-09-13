@@ -24,6 +24,11 @@ const Navbar = () => {
               Home
             </a>
           </li>
+          {/* <li className={styles.navbarMenuItem}>
+            <a href="#experience" className={styles.navbarMenuLink}>
+            Experience
+            </a>
+          </li> */}
           <li className={styles.navbarMenuItem}>
             <a href="#about" className={styles.navbarMenuLink}>
               About Me

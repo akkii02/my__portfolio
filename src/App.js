@@ -1,17 +1,22 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Home from './components/Home/Home';
-import About from './components/About/About';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Skill from './components/Skills/Skill';
-import Project from './components/Porject/Project';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
-import Education from './components/Education/Education';
+import { lazy, Suspense } from 'react';
+
+const Navbar = lazy(()=>import('./components/Navbar/Navbar'));
+const Home = lazy(()=>import('./components/Home/Home'));
+const About = lazy(() => import( './components/About/About'));
+const Skill  = lazy(()=>import('./components/Skills/Skill'));
+const Project = lazy(()=>import('./components/Porject/Project'));
+const Contact = lazy(()=>import('./components/Contact/Contact'));
+const Footer  = lazy(()=>import('./components/Footer/Footer'));
+const Education = lazy(()=>import('./components/Education/Education'));
 
 function App() {
   return (
+    <div className='customScrollbar'>
+
     <Router>
+    <Suspense fallback={<div>Loading...</div>}>
       <Navbar />
       <main>
         <Routes>
@@ -43,7 +48,9 @@ function App() {
           />
         </Routes>
       </main>
+          </Suspense>
     </Router>
+              </div>
   );
 }
 

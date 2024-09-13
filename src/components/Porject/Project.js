@@ -3,9 +3,17 @@ import mail from "../assets/mail.png";
 import expense from "../assets/expense tracker.png";
 import res from "../assets/res.png";
 import wea from "../assets/wea.png";
+import hack from "../assets/proimg1.png";
 
 const Project = () => {
     const projects = [
+        {
+            name: "Hackathon Web App",
+            description:"Hackathon Dashboard App! This application is designed for organizers to create, manage, and view hackathons.",
+            image:hack,
+            github:"https://github.com/akkii02/hackathon_app",
+            deploy:"https://hackathon-app-nine.vercel.app/"
+        },
         {
             name: "restaurant website",
             description: "A dynamic platform for ordering and managing meals, featuring order placement and cart functionality.",
@@ -30,7 +38,7 @@ const Project = () => {
         {
             name: "Expense Tracker",
             description: "A robust tool for managing expenses, offering premium features, data export, and detailed tracking.",
-            image: expense, // Replace with actual image URLs
+            image: expense, 
             github: "https://github.com/akkii02/expense_tracker_app"
         },
        
