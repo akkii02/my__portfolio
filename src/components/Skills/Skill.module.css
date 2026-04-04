@@ -1,93 +1,81 @@
 .main {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
+    padding: 32px;
+    background-color: transparent;
+    color: var(--color-fg-default, #c9d1d9);
 }
 
 .heading {
-    font-family: "Poppins", sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #7562E0;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    gap: 10px;
+    color: #f0f6fc;
 }
 
-.box {
-    width: 150px;
-    height: 150px;
-    margin: 20px;
-    background-color: #BDBDBD;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+.heading::before {
+    content: '';
+    width: 3px;
+    height: 18px;
+    background: var(--gradient-primary);
+    border-radius: 4px;
+}
+
+.categoryContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s ease;
+    flex-direction: column;
+    gap: 28px;
 }
 
-.box:hover {
-    background-color: #7562E0;
+.categoryBox {
+    padding-bottom: 8px;
+}
+
+.categoryTitle {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background-color: rgba(22, 27, 34, 0.5);
+    border: 1px solid var(--color-border-default);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: default;
+}
+
+.skillItem:hover {
+    transform: translateY(-3px);
+    background-color: rgba(33, 38, 45, 0.8);
+    border-color: #58a6ff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .icon {
-    text-align: center;
-    margin: 0;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
 }
 
-.name {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-    color: white;
-    margin-top: 10px;
+.skillName {
+    font-size: 13px;
+    font-weight: 500;
 }
 
-@media (max-width: 768px) {
-    .box {
-        width: 170px;
-        height: 170px;
-    }
-}
-
-@media (max-width: 468px) {
-    .container{
-        width: 100%;
-    }
-    .main {
-        width: 100%;
-        height: auto;
-        padding-top: 50px;
-    }
-
-    .box {
-        width: 120px;
-        height: 120px;
-        margin: 10px;
-        /* border: 2px solid red; */
-    }
-
-    .icon {
-        font-size: 2.5em;
-    }
-
-    .name {
-        font-size: 1rem;
-        margin-top: 5px;
-    }
-}

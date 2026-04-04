@@ -1,0 +1,157 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #f0f6fc;
+}
+
+.accent {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.subtitle {
+    font-size: 16px;
+    color: var(--color-fg-muted);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.categoryWrapper {
+    margin-bottom: 80px;
+}
+
+.categoryHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--color-border-default);
+}
+
+.catIcon {
+    color: var(--color-accent-fg);
+    font-size: 20px;
+}
+
+.categoryHeader h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f0f6fc;
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px;
+}
+
+.projectCard {
+    background: rgba(22, 27, 34, 0.4);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--color-border-default);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.projectCard:hover {
+    transform: translateY(-8px);
+    border-color: #58a6ff;
+    background: rgba(33, 38, 45, 0.6);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.companyName, .typeLabel {
+    font-size: 12px;
+    font-weight: 700;
+    color: #58a6ff;
+    padding: 4px 10px;
+    background: rgba(88, 166, 255, 0.1);
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.typeLabel {
+    color: #39d353;
+    background: rgba(57, 211, 83, 0.1);
+}
+
+.cardLinks {
+    display: flex;
+    gap: 16px;
+    font-size: 18px;
+    color: var(--color-fg-muted);
+}
+
+.cardLinks a:hover {
+    color: #f0f6fc;
+}
+
+.projectName {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #f0f6fc;
+}
+
+.projectDesc {
+    font-size: 14px;
+    color: var(--color-fg-muted);
+    line-height: 1.6;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.techItem {
+    font-size: 11px;
+    font-weight: 500;
+    color: #c9d1d9;
+    padding: 4px 8px;
+    background: #161b22;
+    border-radius: 4px;
+    border: 1px solid #30363d;
+}
+
+@media (max-width: 768px) {
+    .projectGrid {
+        grid-template-columns: 1fr;
+    }
+    
+    .title {
+        font-size: 32px;
+    }
+}

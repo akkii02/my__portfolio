@@ -1,0 +1,154 @@
+.wrapper {
+  background-color: var(--color-canvas-default);
+  min-height: 100vh;
+  padding-top: 32px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  gap: 32px;
+  padding: 0 32px;
+}
+
+.sidebarColumn {
+  width: 25%;
+  flex-shrink: 0;
+}
+
+.mainColumn {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabsSticky {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-canvas-default);
+  z-index: 10;
+  border-bottom: 1px solid var(--color-border-default);
+  margin-bottom: 24px;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.tab {
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 2px solid transparent;
+  color: var(--color-fg-default);
+  transition: 0.2s;
+}
+
+.tab:hover {
+  border-bottom: 2px solid #8b949e;
+}
+
+.active {
+  border-bottom: 2px solid #f78166; /* GitHub active tab color */
+  font-weight: 600;
+}
+
+.counter {
+  background-color: #30363d;
+  color: #c9d1d9;
+  border-radius: 20px;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.sectionHeader h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-fg-default);
+}
+
+.repoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1012px) {
+  .container {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+  
+  .sidebarColumn {
+    width: 100%;
+  }
+  
+  .mainColumn {
+    width: 100%;
+  }
+  
+  .repoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.readmeSection {
+    border: 1px solid var(--color-border-default, #30363d);
+    border-radius: 8px;
+    background-color: rgba(13, 17, 23, 0.4);
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+    margin-top: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.readmeSection:hover {
+    border-color: #484f58;
+}
+
+.readmeHeader {
+    padding: 10px 16px;
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
+    font-size: 13px;
+    font-weight: 500;
+    color: #8b949e;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.readmeHeader::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: var(--gradient-primary);
+    border-radius: 3px;
+}
+
+.readmeContent {
+    background-color: transparent;
+    padding: 0;
+}
+
+
