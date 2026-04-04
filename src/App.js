@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { projects } from './data/projects';
 
-const Navbar = lazy(()=>import('./components/Navbar/Navbar'));
 const ModernLayout = lazy(()=>import('./components/ModernLayout/ModernLayout'));
-const Footer  = lazy(()=>import('./components/Footer/Footer'));
 
 function App() {
   return (

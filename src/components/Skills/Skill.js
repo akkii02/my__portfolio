@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  SiHtml5, SiCss3, SiJavascript, SiReact, SiNodedotjs, SiGithub, SiBootstrap,
+  SiHtml5, SiCss3, SiJavascript, SiReact, SiNodedotjs, SiGithub,
   SiTailwindcss, SiExpress, SiMysql, SiMongodb, SiTypescript, SiRedux, SiGraphql,
   SiPostgresql, SiFirebase, SiAmazonwebservices, SiDocker, SiKubernetes, SiOpenai
 } from "react-icons/si";
